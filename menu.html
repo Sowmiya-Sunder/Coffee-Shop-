@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop - Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Coffee Shop Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="review.html">Reviews</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="menu">
+        <center>
+            <h1>Menu</h1>
+        </center>
+        <div class="grid">
+            <div class="menu-item">
+                <img src="images/cappuccino.jpeg" alt="Cappuccino">
+                <h3>Cappuccino</h3>
+                <button onclick="addToCart('Cappuccino', 'images/cappuccino.jpeg', 100)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/americanao.jpeg" alt="Americano">
+                <h3>Americano</h3>
+                <button onclick="addToCart('Americano', 'images/americanao.jpeg', 150)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/irish.jpeg" alt="Irish Coffee">
+                <h3>Irish Coffee</h3>
+                <button onclick="addToCart('Irish Coffee', 'images/irish.jpeg', 170)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/mocha.jpeg" alt="Mocha">
+                <h3>Mocha</h3>
+                <button onclick="addToCart('Mocha', 'images/mocha.jpeg', 200)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/frappe.jpeg" alt="Frappe">
+                <h3>Frappe</h3>
+                <button onclick="addToCart('Frappe', 'images/frappe.jpeg', 350)">Add to Cart</button>
+            </div>
+            <div class="menu-item">
+                <img src="images/iced.jpeg" alt="Iced Coffee">
+                <h3>Iced Coffee</h3>
+                <button onclick="addToCart('Iced Coffee', 'images/iced.jpeg', 380)">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    
+    <section class="cart-section">
+        <center>
+            <h2>Your Cart</h2>
+        </center>
+        <div id="cart-items" class="cart-items"></div>
+        <div class="cart-summary">
+            <h3>Total Price: <span id="total-price">₹0.00</span></h3>
+        </div>
+        <button class="checkout-button">Checkout Now</button>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Coffee Shop</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
